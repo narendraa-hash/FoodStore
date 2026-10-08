@@ -1,4 +1,8 @@
 package com.example.foodstore.repository;
 
-public interface MenuCategoryRepository {
+import com.example.foodstore.entity.MenuCategory;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MenuCategoryRepository extends JpaRepository<MenuCategory, Long> {
+
 }
