@@ -1,0 +1,6 @@
+$kind: collection
+name: FoodStore
+description: 'API collection for the FoodStore Spring Boot application. Covers User management endpoints under /api/users.'
+variables:
+  - key: base_url
+    value: 'http://localhost:8080'

@@ -1,0 +1,11 @@
+$kind: http-request
+method: GET
+url: '{{base_url}}/api/users'
+order: 1000
+auth:
+  type: basic
+  credentials:
+    - key: username
+      value: admin
+    - key: password
+      value: admin

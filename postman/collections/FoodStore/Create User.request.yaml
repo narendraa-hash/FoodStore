@@ -1,0 +1,23 @@
+$kind: http-request
+method: POST
+url: "{{base_url}}/api/users"
+examples: .resources/Create User.resources/examples
+order: 2000
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: admin
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "password": "secret123",
+      "role": "CUSTOMER",
+      "active": true
+    }
